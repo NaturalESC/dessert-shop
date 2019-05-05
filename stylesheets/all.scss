@@ -1,0 +1,14 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "custom/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+//components
+@import"components/reset";
+@import"components/layout";
+@import"components/index";
+@import"components/order-cash";
+@import"components/progress-bar";
+@import"components/goods-card";
+@import"components/checkout-banner";

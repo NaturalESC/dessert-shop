@@ -1,0 +1,28 @@
+.progressbar{
+    width: 190px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    .progresscircle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background-color: #3F5D45;
+        border-radius: 50%;
+        border: 1px solid white;
+        .circle-inside{
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;                    
+        }
+    }
+    .progressline{
+        
+        width: 59px;
+        height: 1px;
+        background-color: #3F5D45;
+        
+    }            
+}

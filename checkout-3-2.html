@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- all.css -->
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="images/favicon_48.ico">
+
+    <title>甜點電商</title>
+    <style>
+        body {
+            font-family: Microsoft JhengHei;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-30 d-flex justify-content-between">
+        <div class="container px-0">
+            <a class="navbar-brand  d-none d-lg-block" href="/home.html">
+                <img src="images/logo-all-dark.svg" height="40" alt="">
+            </a>
+            <button class="navbar-toggler mx-3 " type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand  d-block d-lg-none" href="#">
+                <img src="images/logotype.svg" width="114" alt="">
+            </a>
+            <a class="nav-link text-peace d-block d-lg-none" href="#"><i class="fas fa-shopping-cart"></i></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  d-flex ml-auto font-weight-bold">
+                    <li class="nav-item ml-60 active">
+                        <a class="nav-link text-peace fontbolder" href="/home.html">首頁</a>
+                    </li>
+                    <li class="nav-item ml-60">
+                        <a class="nav-link text-peace fontbolder" href="/product.html">甜點</a>
+                    </li>
+                    <li class="nav-item ml-60">
+                        <a class="nav-link text-peace fontbolder" href="/login.html">登入</a>
+                    </li>
+                    <li class="nav-item ml-80 ">
+                        <a class="nav-link text-peace" href="/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- content -->
+    <section>
+        <div class="container px-0 pb-5">
+            <div class="row d-flex justify-content-center no-gutters">
+                <div class="col-md-10 col-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-7 col-12 pr-md-2 pr-0">
+                            <div class=" bg-peace text-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="h2 pl-4 py-4 pr-0 text-left">發票</div>
+                                    <div class=" pr-5 pl-0">
+                                        <div class="progressbar">
+                                            <div class="fs-24">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                            <div class="progressline bg-white"></div>
+                                            <div class="fs-24">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                            <div class="progressline bg-white"></div>
+                                            <div class="progresscircle">
+                                                <div class="circle-inside bg-white"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group d-flex justify-content-center p-4" role="group"
+                                    aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-light p-2">電子發票</button>
+                                    <button type="button" class="btn btn-outline-light p-2">郵寄發票</button>
+                                </div>
+                                <form class="fs-20">
+                                    <div class="form-row px-4 pb-3  w-100">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCity">地址</label>
+                                            <select class="custom-select my-1 mr-sm-2" id="inputCity"
+                                                style="height:56px;">
+                                                <option selected>高雄市</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <div class="form-group form-check text-right" style="margin-bottom:8px;">
+                                                <input type="checkbox" class="form-check-input mt-2
+                                                " id="exampleCheck1" style="width:16px;height:16px;">
+                                                <label class="form-check-label" for="exampleCheck1">同運送地址</label>
+                                            </div>
+                                            <select class="custom-select my-1 mr-sm-2" id="inputDist"
+                                                style="height:56px;">
+                                                <option selected>新興區</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col">
+                                            <input type="text" class="form-control" id="inputAddress"
+                                                placeholder="幸福路 520 號" style="height:56px;">
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="inputGUI">統一編號（選填）</label>
+                                            <input type="text" class="form-control" id="inputGUI" placeholder="12345678"
+                                                style="height:56px;">
+                                        </div>
+                                    </div>
+                                    <div class="px-0  mb-md-5 mb-0">
+                                        <a href="/checkout-success.html"
+                                            class="btn btn-sun w-100 text-peace fs-24 font-weight-bold">確認結帳</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-5 d-none d-md-block  pl-md-2 pl-0">
+                            <div class="bg-white text-peace border mb-4">
+                                <div class="h3 p-3  text-center bg-cool">訂單摘要</div>
+                                <div class="p-3">
+                                    <table class="table table-borderless table-sm bg-white mb-0 text-peace ">
+                                        <tbody>
+                                            <tr>
+                                                <td>小計</td>
+                                                <td class="text-right">NT$ 2,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td>運費</td>
+                                                <td class="text-right">NT$ 300</td>
+                                            </tr>
+                                            <tr class="fs-20">
+                                                <th>總計</th>
+                                                <td class="text-right">NT$ 3,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class=" bg-white text-peace border">
+                                <div class="h3 p-3  text-center bg-cool m-0">購物清單</div>
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><img src="https://bit.ly/2QvsT63" width="80px" height="80px"
+                                                    alt="">
+                                            </th>
+                                            <td class="align-middle text-left text-peace">焦糖馬卡龍<br><strong
+                                                    class="fs-20">NT$ 1350</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><img src="https://bit.ly/2zBDAxX" width="80px" height="80px"
+                                                    alt="">
+                                            </th>
+                                            <td class="align-middle text-left text-peace">焦糖馬卡龍<br><strong
+                                                    class="fs-20">NT$
+                                                    1350</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscription -->
+    <section>
+        <div class="bg-peace">
+            <div class="container  px-0">
+                <div class="row d-flex justify-content-center no-gutters">
+                    <div class="col-10 ">
+                        <div class="row">
+                            <div
+                                class="col-lg-6  d-flex align-items-center justify-content-lg-start justify-content-center pt-lg-0 pt-30">
+                                <img class="mr-3" src="images/logo-light.svg" width="40px" height="40px" alt="">
+                                <div class="fs-24 text-white">訂閱你我的甜蜜郵件</div>
+                            </div>
+                            <div
+                                class="col-lg-6 d-flex align-items-center justify-content-lg-end justify-content-center  py-30">
+                                <div class="input-group input-icon" style=" height:56px;">
+                                    <i class="fas fa-envelope text-peace"></i>
+                                    <input style=" height: 56px; " type="text" class="form-control border-0 focusnone"
+                                        aria-label="Amount (to the nearest dollar)">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-sun border-0" type="button" id="button-addon2"
+                                            style="width: 64px"><i class="fas fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section>
+        <div class="py-30 bg-cool">
+            <div class="container px-0">
+                <div class="row d-flex justify-content-center  no-gutters">
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col-md-7 col d-flex align-items-start flex-column">
+                                <img class="my-20" src="images/logotype-lg-dark.svg" width="170px" alt="">
+                                <ul class="p-0 text-peace mt-100">
+                                    <li><a class="text-peace" href="tel:07-1234-5678">07-1234-5678</a></li>
+                                    <li>sweetaste@email.com</li>
+                                    <li>800 高雄市新興區幸福路 520 號</li>
+                                </ul>
+                                <div class="pt-2">
+                                    <a class="text-peace" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                                    <a class="text-peace" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                                </div>
+                                <p class="text-peace mt-4  d-lg-none">© 2018 Sweetaste* All Rights Reserved
+                                </p>
+
+                            </div>
+                            <div class="col-md-5 d-flex  align-items-end flex-column ">
+                                <img class="mt-auto d-none d-md-block" src="images/sm-今天是個吃甜點的好日子.svg" height="218px"
+                                    alt="">
+                                <p class="text-peace mt-40 mb-0 d-none d-lg-block">© 2018 Sweetaste* All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

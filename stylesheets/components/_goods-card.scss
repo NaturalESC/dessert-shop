@@ -1,0 +1,16 @@
+.goods-card{
+    height: 315px; 
+    position: relative;
+    .today-best{
+        position: absolute; 
+        left: 20px; 
+        writing-mode: 
+        vertical-lr; 
+        letter-spacing:4px;
+    }
+    .add-attention{
+        position: absolute; 
+        right: 22px; 
+        top: 20px;
+    }
+}

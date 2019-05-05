@@ -1,0 +1,23 @@
+html{
+    .fs-20{
+        font-size: 20px;
+    }
+    .fs-24{
+        font-size: 24px;
+    }
+}
+// footer
+.input-icon{
+    position: relative;
+    i.fas{
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        z-index:100;
+    }
+    input{
+        position: absolute;
+        text-indent: 60px;
+        z-index:0;
+    }
+}
