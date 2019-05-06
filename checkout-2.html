@@ -16,7 +16,7 @@
     <title>甜點電商</title>
     <style>
         body {
-            font-family: Microsoft JhengHei;
+            font-family: "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", sans-serif;
         }
     </style>
 </head>
@@ -32,10 +32,10 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand  d-block d-lg-none" href="#">
+            <a class="navbar-brand  d-block d-lg-none" href="index.html">
                 <img src="images/logotype.svg" width="114" alt="">
             </a>
-            <a class="nav-link text-peace d-block d-lg-none" href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a class="nav-link text-peace d-block d-lg-none" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav  d-flex ml-auto font-weight-bold">
                     <li class="nav-item ml-60 active">
@@ -47,7 +47,7 @@
                     <li class="nav-item ml-60">
                         <a class="nav-link text-peace fontbolder" href="login.html">登入</a>
                     </li>
-                    <li class="nav-item ml-80 ">
+                    <li class="nav-item ml-80 d-none d-lg-block">
                         <a class="nav-link text-peace" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                     </li>
                 </ul>
@@ -58,7 +58,7 @@
 
     <!-- content -->
     <section>
-        <div class="container px-0  pb-3">
+        <div class="container px-0  pb-sm-3 pb-0">
             <div class="row d-flex justify-content-center no-gutters">
                 <div class="col-md-10 col-12">
                     <div class="row no-gutters">
@@ -66,16 +66,24 @@
                             <div class=" bg-peace text-white">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="h2 pl-4 py-4 pr-0 text-left">付款</div>
-                                    <div class=" pr-5 pl-0">
+                                    <div class="pr-5 pl-0 progressbar-block">
                                         <div class="progressbar">
                                             <div class="fs-24">
                                                 <i class="fas fa-check-circle"></i>
                                             </div>
+                                        </div>
+                                        <div class="progressbar-line">
                                             <div class="progressline bg-white"></div>
+                                        </div>
+                                        <div class="progressbar">
                                             <div class="progresscircle">
                                                 <div class="circle-inside bg-white"></div>
                                             </div>
+                                        </div>
+                                        <div class="progressbar-line">
                                             <div class="progressline bg-white"></div>
+                                        </div>
+                                        <div class="progressbar">
                                             <div class="progresscircle"></div>
                                         </div>
                                     </div>
@@ -200,7 +208,7 @@
                                 class="col-lg-6 d-flex align-items-center justify-content-lg-end justify-content-center  py-30">
                                 <div class="input-group input-icon" style=" height:56px;">
                                     <i class="fas fa-envelope text-peace"></i>
-                                    <input style=" height: 56px; " type="text" class="form-control border-0 focusnone"
+                                    <input style=" height: 56px; " type="email" class="form-control border-0 focusnone"
                                         aria-label="Amount (to the nearest dollar)">
                                     <div class="input-group-append">
                                         <button class="btn btn-sun border-0" type="button" id="button-addon2"
@@ -224,13 +232,13 @@
                             <div class="col-md-7 col d-flex align-items-start flex-column">
                                 <img class="my-20" src="images/logotype-lg-dark.svg" width="170px" alt="">
                                 <ul class="p-0 text-peace mt-100">
-                                    <li><a class="text-peace" href="tel:07-1234-5678">07-1234-5678</a></li>
+                                    <li><a href="tel:07-1234-5678">07-1234-5678</a></li>
                                     <li>sweetaste@email.com</li>
                                     <li>800 高雄市新興區幸福路 520 號</li>
                                 </ul>
                                 <div class="pt-2">
-                                    <a class="text-peace" href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-                                    <a class="text-peace" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                                    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
                                 </div>
                                 <p class="text-peace mt-4  d-lg-none">© 2018 Sweetaste* All Rights Reserved
                                 </p>
@@ -248,6 +256,15 @@
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
