@@ -572,7 +572,7 @@ pre code {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 940px;
+    max-width: 970px;
   }
 }
 
@@ -14636,5 +14636,18 @@ html .fs-24 {
     height: 500px;
     padding-top: 220px;
   }
+}
+
+.negative-mr {
+  margin-right: -15px;
+}
+
+.negative-ml {
+  margin-left: -15px;
+}
+
+.negative-mx {
+  margin-right: -15px;
+  margin-left: -15px;
 }
 /*# sourceMappingURL=all.css.map */

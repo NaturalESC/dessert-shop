@@ -16,7 +16,7 @@
     <title>甜點電商</title>
     <style>
         body {
-            font-family:"Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI",sans-serif;
+            font-family: "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", sans-serif;
         }
     </style>
 </head>
@@ -24,7 +24,7 @@
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-30 d-flex justify-content-between">
-        <div class="container px-0">
+        <div class="container">
             <a class="navbar-brand  d-none d-lg-block" href="index.html">
                 <img src="images/logo-all-dark.svg" height="40" alt="">
             </a>
@@ -58,131 +58,134 @@
 
     <!-- content -->
     <section>
-        <div class="container px-0 pb-sm-5 pb-0">
-            <div class="row d-flex justify-content-center no-gutters">
-                <div class="col-md-10 col-12">
-                    <div class="row no-gutters">
-                        <div class="col-md-7 col-12 pr-md-2 pr-0">
-                            <div class=" bg-peace text-white">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="h2 pl-4 py-4 pr-0 text-left">發票</div>
-                                    <div class="pr-5 pl-0 progressbar-block">
-                                        <div class="progressbar">
-                                            <div class="fs-24">
-                                                <i class="fas fa-check-circle"></i>
+        <div class="container pb-sm-5 pb-0">
+            <div class="negative-mx mx-md-0">
+                <div class="row d-flex justify-content-center no-gutters">
+                    <div class="col-md-10 col-12">
+                        <div class="row no-gutters">
+                            <div class="col-md-7 col-12 pr-md-2 pr-0">
+                                <div class=" bg-peace text-white">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="h2 pl-4 py-4 pr-0 text-left">發票</div>
+                                        <div class="pr-5 pl-0 progressbar-block">
+                                            <div class="progressbar">
+                                                <div class="fs-24">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="progressbar-line">
-                                            <div class="progressline bg-white"></div>
-                                        </div>
-                                        <div class="progressbar">
-                                            <div class="fs-24">
-                                                <i class="fas fa-check-circle"></i>
+                                            <div class="progressbar-line">
+                                                <div class="progressline bg-white"></div>
                                             </div>
-                                        </div>
-                                        <div class="progressbar-line">
-                                            <div class="progressline bg-white"></div>
-                                        </div>
-                                        <div class="progressbar">
-                                            <div class="progresscircle">
-                                                <div class="circle-inside bg-white"></div>
+                                            <div class="progressbar">
+                                                <div class="fs-24">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="progressbar-line">
+                                                <div class="progressline bg-white"></div>
+                                            </div>
+                                            <div class="progressbar">
+                                                <div class="progresscircle">
+                                                    <div class="circle-inside bg-white"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="btn-group d-flex justify-content-center p-4" role="group"
-                                    aria-label="Basic example">
-                                    <button type="button" class="btn btn-outline-light p-2">電子發票</button>
-                                    <button type="button" class="btn btn-outline-light p-2">郵寄發票</button>
-                                </div>
-                                <form class="fs-20">
-                                    <div class="form-row px-4 pb-3  w-100">
-                                        <div class="form-group col-md-6">
-                                            <label for="inputCity">地址</label>
-                                            <select class="custom-select my-1 mr-sm-2" id="inputCity"
-                                                style="height:56px;">
-                                                <option selected>高雄市</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <div class="form-group form-check text-right" style="margin-bottom:8px;">
-                                                <input type="checkbox" class="form-check-input mt-2
+                                    <div class="btn-group d-flex justify-content-center p-4" role="group"
+                                        aria-label="Basic example">
+                                        <button type="button" class="btn btn-outline-light p-2">電子發票</button>
+                                        <button type="button" class="btn btn-outline-light p-2">郵寄發票</button>
+                                    </div>
+                                    <form class="fs-20">
+                                        <div class="form-row px-4 pb-3  w-100">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">地址</label>
+                                                <select class="custom-select my-1 mr-sm-2" id="inputCity"
+                                                    style="height:56px;">
+                                                    <option selected>高雄市</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <div class="form-group form-check text-right"
+                                                    style="margin-bottom:8px;">
+                                                    <input type="checkbox" class="form-check-input mt-2
                                                 " id="exampleCheck1" style="width:16px;height:16px;">
-                                                <label class="form-check-label" for="exampleCheck1">同運送地址</label>
+                                                    <label class="form-check-label" for="exampleCheck1">同運送地址</label>
+                                                </div>
+                                                <select class="custom-select my-1 mr-sm-2" id="inputDist"
+                                                    style="height:56px;">
+                                                    <option selected>新興區</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
                                             </div>
-                                            <select class="custom-select my-1 mr-sm-2" id="inputDist"
-                                                style="height:56px;">
-                                                <option selected>新興區</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
+                                            <div class="form-group col">
+                                                <input type="text" class="form-control" id="inputAddress"
+                                                    placeholder="幸福路 520 號" style="height:56px;">
+                                            </div>
+                                            <div class="form-group col-12">
+                                                <label for="inputGUI">統一編號（選填）</label>
+                                                <input type="text" class="form-control" id="inputGUI"
+                                                    placeholder="12345678" style="height:56px;">
+                                            </div>
                                         </div>
-                                        <div class="form-group col">
-                                            <input type="text" class="form-control" id="inputAddress"
-                                                placeholder="幸福路 520 號" style="height:56px;">
+                                        <div class="mb-md-5 mb-0">
+                                            <a href="checkout-success.html"
+                                                class="btn btn-sun w-100 text-peace fs-24 font-weight-bold">確認結帳</a>
                                         </div>
-                                        <div class="form-group col-12">
-                                            <label for="inputGUI">統一編號（選填）</label>
-                                            <input type="text" class="form-control" id="inputGUI" placeholder="12345678"
-                                                style="height:56px;">
-                                        </div>
-                                    </div>
-                                    <div class="px-0  mb-md-5 mb-0">
-                                        <a href="checkout-success.html"
-                                            class="btn btn-sun w-100 text-peace fs-24 font-weight-bold">確認結帳</a>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-5 d-none d-md-block  pl-md-2 pl-0">
-                            <div class="bg-white text-peace border mb-4">
-                                <div class="h3 p-3  text-center bg-cool">訂單摘要</div>
-                                <div class="p-3">
-                                    <table class="table table-borderless table-sm bg-white mb-0 text-peace ">
+                            <div class="col-5 d-none d-md-block  pl-md-2 pl-0">
+                                <div class="bg-white text-peace border mb-4">
+                                    <div class="h3 p-3  text-center bg-cool">訂單摘要</div>
+                                    <div class="p-3">
+                                        <table class="table table-borderless table-sm bg-white mb-0 text-peace ">
+                                            <tbody>
+                                                <tr>
+                                                    <td>小計</td>
+                                                    <td class="text-right">NT$ 2,700</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>運費</td>
+                                                    <td class="text-right">NT$ 300</td>
+                                                </tr>
+                                                <tr class="fs-20">
+                                                    <th>總計</th>
+                                                    <td class="text-right">NT$ 3,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class=" bg-white text-peace border">
+                                    <div class="h3 p-3  text-center bg-cool m-0">購物清單</div>
+                                    <table class="table table-hover">
                                         <tbody>
                                             <tr>
-                                                <td>小計</td>
-                                                <td class="text-right">NT$ 2,700</td>
+                                                <th scope="row"><img src="https://bit.ly/2QvsT63" width="80px"
+                                                        height="80px" alt="">
+                                                </th>
+                                                <td class="align-middle text-left text-peace">焦糖馬卡龍<br><strong
+                                                        class="fs-20">NT$ 1350</strong>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>運費</td>
-                                                <td class="text-right">NT$ 300</td>
-                                            </tr>
-                                            <tr class="fs-20">
-                                                <th>總計</th>
-                                                <td class="text-right">NT$ 3,000</td>
+                                                <th scope="row"><img src="https://bit.ly/2zBDAxX" width="80px"
+                                                        height="80px" alt="">
+                                                </th>
+                                                <td class="align-middle text-left text-peace">焦糖馬卡龍<br><strong
+                                                        class="fs-20">NT$
+                                                        1350</strong>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
-                            <div class=" bg-white text-peace border">
-                                <div class="h3 p-3  text-center bg-cool m-0">購物清單</div>
-                                <table class="table table-hover">
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row"><img src="https://bit.ly/2QvsT63" width="80px" height="80px"
-                                                    alt="">
-                                            </th>
-                                            <td class="align-middle text-left text-peace">焦糖馬卡龍<br><strong
-                                                    class="fs-20">NT$ 1350</strong>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row"><img src="https://bit.ly/2zBDAxX" width="80px" height="80px"
-                                                    alt="">
-                                            </th>
-                                            <td class="align-middle text-left text-peace">焦糖馬卡龍<br><strong
-                                                    class="fs-20">NT$
-                                                    1350</strong>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
                     </div>
@@ -193,7 +196,7 @@
     <!-- subscription -->
     <section>
         <div class="bg-peace">
-            <div class="container  px-0">
+            <div class="container">
                 <div class="row d-flex justify-content-center no-gutters">
                     <div class="col-10 ">
                         <div class="row">
@@ -223,7 +226,7 @@
     <!-- footer -->
     <section>
         <div class="py-30 bg-cool">
-            <div class="container px-0">
+            <div class="container">
                 <div class="row d-flex justify-content-center  no-gutters">
                     <div class="col-10">
                         <div class="row">
@@ -240,7 +243,7 @@
                                 </div>
                                 <p class="text-peace mt-4  d-lg-none">© 2018 Sweetaste* All Rights Reserved
                                 </p>
-    
+
                             </div>
                             <div class="col-md-5 d-flex  align-items-end flex-column ">
                                 <img class="mt-auto d-none d-md-block" src="images/sm-今天是個吃甜點的好日子.svg" height="218px"
